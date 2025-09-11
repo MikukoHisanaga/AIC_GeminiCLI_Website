@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025年9月10日</title>
+    <title>記事一覧</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .article-thumbnail {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .article-thumbnail img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .article-thumbnail h2 {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+        .article-thumbnail p {
+            margin: 0 10px 10px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1>こんにちは！</h1>
-    <p>これは私のウェブサイトです。</p>
+    <h1>記事一覧</h1>
+    <div class="article-grid">
+        <a href="article1.html" class="article-thumbnail">
+            <img src="https://via.placeholder.com/300x200" alt="記事1のサムネイル">
+            <h2>記事タイトル1</h2>
+            <p>この記事の簡単な説明です。</p>
+        </a>
+        <a href="article2.html" class="article-thumbnail">
+            <img src="https://via.placeholder.com/300x200" alt="記事2のサムネイル">
+            <h2>記事タイトル2</h2>
+            <p>この記事の簡単な説明です。</p>
+        </a>
+        <a href="article3.html" class="article-thumbnail">
+            <img src="https://via.placeholder.com/300x200" alt="記事3のサムネイル">
+            <h2>記事タイトル3</h2>
+            <p>この記事の簡単な説明です。</p>
+        </a>
+    </div>
 </body>
 </html>
