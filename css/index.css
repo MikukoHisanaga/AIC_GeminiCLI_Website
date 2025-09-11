@@ -1,0 +1,40 @@
+/* トップページ用のスタイル */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.article-thumbnail {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.article-thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-thumbnail img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-thumbnail h2 {
+    font-size: 1.1em;
+    margin: 15px;
+    color: #333;
+}
+
+.article-thumbnail p {
+    font-size: 0.9em;
+    margin: 0 15px 15px;
+    color: #666;
+}
