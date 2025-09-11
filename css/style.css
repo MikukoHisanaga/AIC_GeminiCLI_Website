@@ -152,3 +152,26 @@ a:hover {
     border-top: 1px solid #333;
     padding-top: 30px;
 }
+
+/* Opening Animation */
+#opening-animation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+#opening-animation-overlay.fade-out {
+    opacity: 0;
+}
+
+.anim-image {
+    position: absolute;
+    will-change: transform;
+}
